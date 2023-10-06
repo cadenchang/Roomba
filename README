@@ -1,0 +1,24 @@
+Implementation completed by: Caden Chang
+Last Edited: 10/1/23
+
+Usage:
+To run and compile: python3 main.py
+
+- First enter a valid battery amount
+- Robot will then ask for a command (must be either spot, general, or done)
+- if done is requested robot program ends
+- if spot or general are requested, program completes the full cleaning task
+and awaits another command
+- if battery drops below 30 during a cleaning task, the robot will dock and
+recharge first, then continue where it left off from its cleaning task 
+
+Battery and charging: when robot docks, battery is automatically set to 100
+meaning there are no charging cycles
+
+Dusty spot sensor: Dusty spot sensor has a 1/3 chance of detecting a dirty spot.
+To change this probability, edit parameters on line 47 of main.py
+
+Clean Floor Task: This task has a 1/10 chance of failure (failure results in 
+completion of the CleanFloor task). To change this probability, edit parameters
+on line 6 of clean_floor.py
+
